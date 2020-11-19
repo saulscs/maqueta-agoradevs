@@ -1,0 +1,49 @@
+/*MAIN CONFIG*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+:root{
+    --mainBlack: #100303;
+    --mainPurple: #95389e;
+    --mainLigthBlue: #43d8c9;
+    --mainGray: #f7f7f7;
+}
+
+/*RESET STYLES*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**/
