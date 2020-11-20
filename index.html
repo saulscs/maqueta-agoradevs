@@ -5,16 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agoradevs</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <!--Navbar-->
-        
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="fadeInDown">
+                <a href="/" class="navbar__logo"><i class="fas fa-book-reader"></i>Agora Devs</a>
+            </div>
+            <!--Menu-->
+            <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="fadeInDown navbar__item">
+                    <a href="/" class="navbar__links">Developers</a>
+                </li>
+                <li class=" fadeInDown navbar__item">
+                    <a href="/" class="navbar__links">Login</a>
+                </li>
+                <li class="fadeInDown navbar__btn">
+                    <a href="/" class="navbar__btn--modifier">Sign In</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
     <!--Hero-->
+    <section class="container  hero__main">
+        <div class="hero__content">
+            <h1>NEXT GENERATION</h1>
+            <h2>TECHNOLOGY</h2>
+            <p>See what makes up different</p>
+            <button class="hero__button--cta">
+                <a href="/">Get started</a>
+            </button>
+        </div>
+        <div class="hero__img--container">
+        <img class="main__img" src="assets/pic1.svg" alt="heroImg"/>
+        </div>
+        </section>
     <!--About-->
+    <section class="container about__main">
+        <div class="about__content">
+            <h2>Connections are always valuable</h2>
+            <p>Although it’s not necessarily “all about who you know,” your business 
+                network can be a huge asset when you’re looking for a job, launching a 
+                business, in need of referrals, or searching for guidance.
+            </p>
+        </div>
+        <div class="about__img--container">
+            <img  src="assets/business_network.jpg" alt="aboutImg"/>
+        </div>
+    </section>
     <!--Beneficts-->
-    <!--Reference-->
+    <section class="container beneficts ">
+        <h2>Beneficts</h2>
+        <p>Hammock whatever wolf pabst, tbh echo park kickstarter</p>
+        <article class="container-bg">
+            <div class="card">
+                <div class="card__text">
+                    <h3 class="card__title"> 1 lorem ipsum</h3>
+                    <p class="card__copy">
+                        1 Although it’s not necessarily “all about who you know,”
+                    </p>
+                </div>
+            </div>
+            <div class="background">
+                <img src="assets/Community.jpg" alt="bgImg"/>
+                <div class="background__text">
+                    <h3 class="background__title"> 1 lorem ipsum</h3>
+                    <p class="background__copy"> 1 Hammock whatever wolf pabst, tbh echo park kickstarter</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__text">
+                    <h3 class="card__title"> 2 lorem ipsum</h3>
+                    <p class="card__copy">
+                       2  Although it’s not necessarily “all about who you know,”
+                    </p>
+                </div>
+            </div>
+            <div class="background">
+                <img src="assets/Community.jpg" alt="bgImg"/>
+                <div class="background__text">
+                    <h3 class="background__title"> 2 lorem ipsum</h3>
+                    <p class="background__copy">2 Hammock whatever wolf pabst, tbh echo park kickstarter</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--Testimony-->
+    <section class="testimony">
+        <div class="container">
+            <h2>Users</h2>
+            <p> 2  Although it’s not necessarily “all about who you know,”</p>
+            
+            <div class="testimony__card">
+                <img src="assets/first-person.jpg" alt="fp" class="testimony__card--img"/>
+                <div class="testimony__copy">
+                    <i class="bx bxl-google testimony__logo" ></i>
+                    <div class="testimony__info">
+                        <h3 class="testimony__name">Andres García</h3>
+                        <p class="testimony__position">Director de google México</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimony__card">
+                <img src="assets/second_person.jpg" alt="fp" class="testimony__card--img"/>
+                <div class="testimony__copy">
+                    <i class="bx bxl-apple testimony__logo" ></i>
+                    <div class="testimony__info">
+                        <h3 class="testimony__name">Andres García</h3>
+                        <p class="testimony__position">Director de Apple México</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimony__card">
+                <div class="testimony__text">
+                    <img src="assets/google_logo.svg" alt="google logo" class="google__logo"/>
+                    <p class="testimony__story">Desde que empezamos a trabjar con Saúl Corona comenzamos a 
+                        tener resultados increibles. Ahora hemos llegado a una mayor cantidad de clientes potenciales.
+                    </p>
+                    <div class="testimony__copy testimony__copy--modifier">
+                        <img src="assets/first-person.jpg" alt="fp" class="testimony__card--img logo--picture"/>
+                        <div class="testimony__info">
+                            <h3 class="testimony__name">Andres García</h3>
+                            <p class="testimony__position">Director de Apple México</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Download-->
-    <!--Links-->
+    <section class="dowloads">
+        <div class="container download">
+            <div class="download__section">
+                <h3 class="download__title">Download our app</h3>
+                <div class="download__app">
+                    <div class="download__item">
+                        <i class="bx bxl-play-store download__logo"></i>
+                        <h4 class="download__title">Play Store</h4>
+                    </div>
+                    <div class="download__item">
+                        <i class="bx bxl-apple download__logo"></i>
+                        <h4 class="download__title">App Store</h4>
+                    </div>
+                </div>
+                <div class="download__copy">
+                    <p class="copyright">Saúl Corona &copy; 2020 Todos los derechos reservados</p>
+                    <a href="#" class="termsAndConditions termsAndConditions--margin">Politica de privacidad</a>
+                    <a href="#" class="termsAndConditions">Terminos y condiciones</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="getEmail">
+            <h3 class="getEmail__title">Keep in touch</h3>
+            <form class="newsletter newsletter--modifier">
+                <input type="text" class="newsletter__input" placeholder="Your email"/>
+                    <input type="submit" class="newsletter__submit" value="Start today"/>
+            </form>
+            <div class="socialmedia">
+                <p class="socialmedia__legend">Follow us</p>
+                <i class="socialmedia__icon bx bxl-facebook-square" ></i>
+                <i class="socialmedia__icon bx bxl-linkedin-square" ></i>
+                <i class="socialmedia__icon bx bxl-twitter"></i>
+                <i class="socialmedia__icon bx bxl-instagram" ></i>
+                <i class="socialmedia__icon bx bxl-github" ></i>
+            </div>
+        </div>
+    </section>
     <!--Footer-->
+    <footer class="footer">
+        <div class="logo fadeInDown">
+            <a href="/" class="footer__logo"><i class="fas fa-book-reader"></i>Agora Devs</a>
+        </div>
+        <p class="website__rights">© Agoradevs 2020. All rights reserved</p>
+    </footer>
+    <script src="app.js"></script>
  </body>
 </html>
