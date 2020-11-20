@@ -51,12 +51,16 @@ a {
     text-decoration: none;
 }
 
+li,a,button{
+    cursor: pointer;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     padding: 100px 0;
-    width: 90%;
+    width: 80%;
 }
 
 
@@ -95,6 +99,23 @@ a {
     }
 } 
 
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
 /*---------------------------*\ 
  $LANDING
 \*---------------------------*/
@@ -122,7 +143,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-    width: 90%;
+    width: 80%;
 }
 
 .navbar__logo{
@@ -242,5 +263,109 @@ a {
     }
   }
 
+
+
   /*HERO*/
 
+  .hero__main{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__content{
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .hero__content h1{
+    font-size: 5vh;
+    background-image: linear-gradient(360deg, rgb(0, 159, 255) 0%, rgb(67, 216, 201) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  .hero__content h2 {
+    font-size: 5vh;
+    margin-top: 10px;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .hero__content p {
+    margin-top: 1rem;
+    font-size: 4vh;
+    font-weight: 700;
+    color: var(--mainBlack);
+  }
+
+  .hero__button--cta{
+    font-size: 1rem;
+    background-image: linear-gradient(360deg, #1120ffa3 0%, #00cfff 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2rem;
+    transition: all 0.35s;
+    outline: none;
+    position: relative;
+    box-shadow: var(--shadow) var(--color_shadow);
+  }
+
+  .hero__button--cta a{
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    font-weight: bold;
+  }
+
+  .hero__button--cta:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--mainPurple);
+    transition: all 0.35s;
+    border-radius: 6px;
+  }
+
+  .hero__button--cta:hover {
+    color: var(--white);
+  }
+  
+  .hero__button--cta:hover:after {
+    width: 100%;
+  }
+
+  .hero__img--container{
+    width: 300px;
+  }
+
+  @media screen and (min-width: 960px) {
+    .hero__main {
+        height: 80vh;
+        flex-direction: row;
+      }
+      .hero__content{
+          text-align: left;
+      }
+      .hero__img--container{
+          width: 45%;
+      }
+      .hero__content h1 {
+          font-size: 7vh;
+      }
+      .hero__content h2{
+        font-size: 7vh;
+      }
+  }
