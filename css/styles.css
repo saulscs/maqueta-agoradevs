@@ -2,6 +2,7 @@
  $MAIN CONFIG
 \*---------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root{
     --mainBlack: #100303;
@@ -9,6 +10,7 @@
     --mainLigthBlue: #43d8c9;
     --mainGray: #f7f7f7;
     --white: #fff;
+    --bgSection: #fafafa;
     --shadow: 0 8px 8px;
     --color_shadow: #00000033;
 }
@@ -41,6 +43,7 @@ body{
 img{
     max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 ul {
@@ -62,6 +65,31 @@ li,a,button{
     padding: 100px 0;
     width: 80%;
 }
+
+/*TEXTS*/
+
+.subtitle{
+  font-size: 4vh;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.copy__section{
+  font-family: Roboto;
+  font-size: 3vh;
+  line-height: 32px;
+  margin-bottom: 60px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 960px){
+  .subtitle{
+    font-size: 5vh;
+  }
+  .copy__section{
+    font-size: 4vh;
+  }
+} 
 
 
 /*ANIMATIONS*/
@@ -369,3 +397,41 @@ li,a,button{
         font-size: 7vh;
       }
   }
+
+
+  /*ABOUT*/
+
+  .about{
+    background-color: var(--white);
+  }
+
+  .about__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .about__content{
+    width: 100%;
+  }
+
+  .about__img--container{
+    width: 100%;
+  }
+
+  @media screen and (min-width: 960px) {
+    .about__main{
+      flex-direction: row;
+    }
+    .about__content{
+      width: 45%;
+    }
+
+    .about__img--container{
+      width: 45%;
+    }
+  }
+
+  /*BENEFITS*/
