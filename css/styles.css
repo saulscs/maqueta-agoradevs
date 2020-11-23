@@ -13,6 +13,9 @@
     --bgSection: #fafafa;
     --shadow: 0 8px 8px;
     --color_shadow: #00000033;
+    --linearGradient1: linear-gradient(360deg, rgb(0, 159, 255) 0%, rgb(67, 216, 201) 100%);
+    --linearGradient2: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    --linearGradient3: linear-gradient(360deg, #1120ffa3 0%, #00cfff 100%);
 }
 
 /*RESET STYLES*/
@@ -69,27 +72,61 @@ li,a,button{
 /*TEXTS*/
 
 .subtitle{
-  font-size: 4vh;
-  margin-bottom: 30px;
+  font-size: 2.625rem;
+  margin-bottom: 1.275rem;
   text-align: left;
 }
 
 .copy__section{
   font-family: Roboto;
-  font-size: 3vh;
-  line-height: 32px;
+  font-size: 1.375rem;
   margin-bottom: 60px;
   text-align: justify;
 }
 
-@media screen and (min-width: 960px){
-  .subtitle{
-    font-size: 5vh;
-  }
-  .copy__section{
-    font-size: 4vh;
-  }
-} 
+
+
+/*MAIN BUTTON CTA*/
+
+.button--cta{
+  font-size: 1rem;
+  background-image: var(--linearGradient3);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 2rem;
+  transition: all 0.35s;
+  outline: none;
+  position: relative;
+  box-shadow: var(--shadow) var(--color_shadow);
+}
+
+.button--cta a{
+  position: relative;
+  z-index: 2;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.button--cta:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--mainPurple);
+  transition: all 0.35s;
+  border-radius: 6px;
+}
+
+.button--cta:hover {
+  color: var(--white);
+}
+
+.button--cta:hover:after {
+  width: 100%;
+}
 
 
 /*ANIMATIONS*/
@@ -211,7 +248,7 @@ li,a,button{
 
 .navbar__btn--modifier{
     color: var(--white);
-    background: linear-gradient(360deg, rgb(0, 159, 255) 0%, rgb(67, 216, 201) 100%);
+    background: var(--linearGradient1);
     padding: 10px 20px;
     border-radius: 6px;
     font-weight: 400;
@@ -295,6 +332,10 @@ li,a,button{
 
   /*HERO*/
 
+  .hero{
+    background: var(--mainGray);
+  }
+
   .hero__main{
     display: flex;
     flex-direction: column;
@@ -309,8 +350,8 @@ li,a,button{
   }
 
   .hero__content h1{
-    font-size: 5vh;
-    background-image: linear-gradient(360deg, rgb(0, 159, 255) 0%, rgb(67, 216, 201) 100%);
+    font-size: 6vh;
+    background-image: var(--linearGradient1);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -320,7 +361,7 @@ li,a,button{
   .hero__content h2 {
     font-size: 5vh;
     margin-top: 10px;
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-image: var(--linearGradient2);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -329,51 +370,13 @@ li,a,button{
   }
 
   .hero__content p {
-    margin-top: 1rem;
+    margin-top: 5vh;
     font-size: 4vh;
     font-weight: 700;
     color: var(--mainBlack);
   }
 
-  .hero__button--cta{
-    font-size: 1rem;
-    background-image: linear-gradient(360deg, #1120ffa3 0%, #00cfff 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 6px;
-    margin-top: 2rem;
-    transition: all 0.35s;
-    outline: none;
-    position: relative;
-    box-shadow: var(--shadow) var(--color_shadow);
-  }
-
-  .hero__button--cta a{
-    position: relative;
-    z-index: 2;
-    color: var(--white);
-    font-weight: bold;
-  }
-
-  .hero__button--cta:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--mainPurple);
-    transition: all 0.35s;
-    border-radius: 6px;
-  }
-
-  .hero__button--cta:hover {
-    color: var(--white);
-  }
   
-  .hero__button--cta:hover:after {
-    width: 100%;
-  }
 
   .hero__img--container{
     width: 300px;
@@ -394,7 +397,7 @@ li,a,button{
           font-size: 7vh;
       }
       .hero__content h2{
-        font-size: 7vh;
+        font-size: 6vh;
       }
   }
 
@@ -435,3 +438,113 @@ li,a,button{
   }
 
   /*BENEFITS*/
+
+  .beneficts{
+    background-color: var(--mainGray);
+  }
+
+  .container-bg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 95%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: var(--white);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: 0 0 6px var(--color_shadow);
+  }
+
+  .card__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: justify;
+    margin: 1rem auto;
+  }
+
+  .card__title{
+    font-size: 2rem;
+    color: var(--mainPurple);
+    margin-bottom: 1rem;
+  }
+
+  .card__copy{
+    color: var(--mainBlack);
+
+    margin-bottom: 16px;
+  }
+
+  .background{
+    width: 95%;
+    margin-bottom: 40px;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+
+  .background > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .background__text{
+    position: absolute;
+    width: 90%;
+    bottom: 30px;
+    left: 3%;
+    background-color: var(--mainPurple);
+    border-radius: 10px;
+    opacity: 0.8;
+    padding: 7px;
+}
+
+
+  .background__title{
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+
+  .background__copy{
+    color: var(--white);
+    text-align: justify;
+    display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    .container-bg{
+      justify-content: space-between;
+    }
+
+    .card{
+      width: 42%;
+    }
+
+    .background{
+      width: 52%;
+    }
+    .background__copy{
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1280px){
+    .card{
+      width: 30%;
+    }
+
+    .background{
+      width: 65%;
+    }
+  }
