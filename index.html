@@ -93,7 +93,7 @@
                 </div>
                 <div class="background">
                     <img src="assets/Community.jpg" alt="bgImg"/>
-                    <div class="background__text">
+                    <div class=" highlight highlight__background--modifier ">
                         <h3 class="background__title"> 1 lorem ipsum</h3>
                         <p class="background__copy"> 
                             2 Hammock whatever wolf pabst, tbh echo park kickstarter
@@ -116,7 +116,7 @@
                 </div>
                 <div class="background">
                     <img src="assets/Community.jpg" alt="bgImg"/>
-                    <div class="background__text">
+                    <div class="highlight highlight__background--modifier">
                         <h3 class="background__title"> 2 lorem ipsum</h3>
                         <p class="background__copy">2 Hammock whatever wolf pabst, tbh echo park kickstarter</p>
                     </div>
@@ -131,51 +131,56 @@
             <h2 class="subtitle">Users</h2>
             <p class="copy__section"> 2  Although it’s not necessarily “all about who you know,”</p>
             
-            <div class="testimony__card">
-                <img src="assets/first-person.jpg" alt="fp" class="testimony__card--img"/>
-                <div class="testimony__copy">
-                    <i class="bx bxl-google testimony__logo" ></i>
-                    <div class="testimony__info">
-                        <h3 class="testimony__name">Andres García</h3>
-                        <p class="testimony__position">Director de google México</p>
+            <div class="testimony__container">
+
+                <div class="testimony__card">
+                    <img src="assets/first-person.jpg" alt="fp" class="testimony__card--img"/>
+                    <div class="testimony__copy highlight highlight__testimony--modifier">
+                        <i class="bx bxl-google testimony__logo" ></i>
+                        <div class="testimony__info">
+                            <h3 class="testimony__name">Andres García</h3>
+                            <p class="testimony__position">Director de google México</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testimony__card">
-                <img src="assets/second_person.jpg" alt="fp" class="testimony__card--img"/>
-                <div class="testimony__copy">
-                    <i class="bx bxl-apple testimony__logo" ></i>
-                    <div class="testimony__info">
-                        <h3 class="testimony__name">Andres García</h3>
-                        <p class="testimony__position">Director de Apple México</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimony__card">
-                <div class="testimony__text">
-                    <img src="assets/google_logo.svg" alt="google logo" class="google__logo"/>
-                    <p class="testimony__story">Desde que empezamos a trabjar con Saúl Corona comenzamos a 
-                        tener resultados increibles. Ahora hemos llegado a una mayor cantidad de clientes potenciales.
-                    </p>
-                    <div class="testimony__copy testimony__copy--modifier">
-                        <img src="assets/first-person.jpg" alt="fp" class="testimony__card--img logo--picture"/>
+                <div class="testimony__card">
+                    <img src="assets/second_person.jpg" alt="fp" class="testimony__card--img"/>
+                    <div class="testimony__copy highlight highlight__testimony--modifier">
+                        <i class="bx bxl-apple testimony__logo" ></i>
                         <div class="testimony__info">
                             <h3 class="testimony__name">Andres García</h3>
                             <p class="testimony__position">Director de Apple México</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="testimony__card">
+                    <div class="testimony__text">
+                        <img src="assets/google_logo.svg" alt="google logo" class="testimony__logo"/>
+                        <p class="testimony__story">Desde que empezamos a trabajar con Saúl Corona comenzamos a 
+                            tener resultados increibles. Ahora hemos llegado a una mayor cantidad de clientes potenciales.
+                        </p>
+                        <div class="testimony__copy highlight testimony__copy--modifier">
+                            <img src="assets/first-person.jpg" alt="fp" class="testimony__card--img logo--picture"/>
+                            <div class="testimony__info">
+                                <h3 class="testimony__name">Andres García</h3>
+                                <p class="testimony__position">Director de Apple México</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!--Download-->
     <section class="dowloads">
-        <div class="container download">
+        <div class="container download__main">
+
             <div class="download__section">
-                <h3 class="download__title">Download our app</h3>
+                <h3 class="downloads__title">Download our app</h3>
                 <div class="download__app">
                     <div class="download__item">
                         <i class="bx bxl-play-store download__logo"></i>
@@ -187,16 +192,16 @@
                     </div>
                 </div>
                 <div class="download__copy">
-                    <p class="copyright">Saúl Corona &copy; 2020 Todos los derechos reservados</p>
                     <a href="#" class="termsAndConditions termsAndConditions--margin">Politica de privacidad</a>
                     <a href="#" class="termsAndConditions">Terminos y condiciones</a>
                 </div>
             </div>
+
             <div class="getEmail">
-                <h3 class="getEmail__title">Keep in touch</h3>
+                <h3 class="downloads__title">Keep in touch</h3>
                 <form class="newsletter newsletter--modifier">
                     <input type="text" class="newsletter__input" placeholder="Your email"/>
-                        <input type="submit" class="newsletter__submit" value="Start today"/>
+                    <input type="submit" class="newsletter__submit" value="Start today"/>
                 </form>
                 <div class="socialmedia">
                     <p class="socialmedia__legend">Follow us</p>
@@ -207,6 +212,7 @@
                     <i class="socialmedia__icon bx bxl-github" ></i>
                 </div>
             </div>
+
         </div>
     </section>
 
