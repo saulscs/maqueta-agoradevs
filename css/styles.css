@@ -226,7 +226,7 @@ li,a,button{
     width: 80%;
 }
 
-.navbar__logo{
+.main__logo{
     color:inherit;
     font-size: 4vh;
     cursor: pointer;
@@ -278,7 +278,7 @@ li,a,button{
 
 @media screen and (max-width: 960px) {
 
-    .navbar__logo{
+    .main__logo{
         padding-left: 25px;
     }
 
@@ -797,11 +797,10 @@ li,a,button{
 /*FOOTER*/
 
 .footer{
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   text-align: center;
   background-color: var(--mainPurple);
+  color: var(--white);
   font-size: 1.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow) var(--color_shadow);
@@ -809,4 +808,27 @@ li,a,button{
 
 .footer .container{
   padding: 60px 0;
+}
+
+.footer__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.footer__logo{
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px){
+  .footer__container{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .footer__logo{
+    margin-bottom: initial;
+  }
 }
