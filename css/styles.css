@@ -8,6 +8,7 @@
     --mainBlack: #100303;
     --mainPurple: #95389e;
     --mainLigthBlue: #43d8c9;
+    --mainDarkBlue: #17a2b8;
     --mainGray: #f7f7f7;
     --white: #fff;
     --bgSection: #fafafa;
@@ -57,7 +58,7 @@ a {
     text-decoration: none;
 }
 
-li,a,button{
+li,a,button,input{
     cursor: pointer;
 }
 
