@@ -34,12 +34,54 @@
                     <a href="login.html" class="navbar__links">Login</a>
                 </li>
                 <li class="fadeInDown navbar__btn">
-                    <a href="/" class="navbar__btn--modifier">Sign Up</a>
+                    <a href="register.html" class="navbar__btn--modifier">Sign Up</a>
                 </li>
             </ul>
             </div>
         </nav>
-    
-        
+
+
+    <!--Form Container-->
+    <section class="container form">
+        <h1 class="title__app text-primary fadeInDown">Sign Up</h1>
+        <p class="subtitle__app fadeInDown"><i class="bx bxs-user"></i>Create your acount</p>
+        <form class="form__box">
+            <input
+                class="form__box--input"
+                type="text"
+                placeholder="Name"
+                name= "name"
+                required
+            />
+            <input
+                class="form__box--input"
+                type="email"
+                placeholder="Email Address"
+                name ="email"
+                required
+            />
+            <small class="form__text">
+                This site uses Gravatar so if you want a profile image, use a
+                Gravatar email
+            </small>
+            <input
+                class="form__box--input"
+                type="password"
+                placeholder="Password"
+                name ="password"
+                required
+            />
+            <input
+                class="form__box--input"
+                type="password"
+                placeholder="Confirm Password"
+                name ="ConfirmPassword"
+                required
+            />
+            <button  type="submit" value="Login"  class="btn btn__primary">Register</button>
+        </form>
+        <p>Already have an account ? <a class ="text-primary" href="login.html">Sign In</a></p>
+    </section>
+
 </body>
 </html>

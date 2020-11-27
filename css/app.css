@@ -46,6 +46,14 @@
     color: var(--mainLigthBlue);
 }
 
+.form__text{
+    margin-top: 0.3rem;
+    color:var(--red);
+}
+
+.text-secondary{
+    color: var(--mainPurple);
+}
 
 /*ALERTS UI*/
 
@@ -57,9 +65,20 @@
 }
 
 .alert__danger{
-    background: red;
+    background: var(--red);
     color: var(--white);
 }
+
+
+/*CARD UI*/
+
+.bgCard{
+    border: 1px solid var(--color_shadow);
+    background-color: var(--bgSection);
+    border-radius: 10px;
+    box-shadow: var(--shadow) var(--color_shadow);
+}
+
 
 
 /*FORM UI*/
@@ -81,10 +100,66 @@
 
 .form__box--input,
 .form__box--input textarea {
+    border: 1px solid var(--mainPurple);
     padding: 0.5rem;
     margin: 1rem auto;
     display: block;
     width: 100%;
     font-size: 1rem;
     border-radius: 5px;
+}
+
+/*PROFILES UI*/
+
+.profiles{
+    padding: 3rem 0;
+}
+
+.profiles__section{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profiles__card{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 80%;
+}
+
+
+.profiles__img{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+.profiles__img img{
+    border-radius: 50%;
+}
+
+.profiles__ul{
+    display: none;
+}
+
+.profiles__info > *{
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    .profiles__card{
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    .profiles__ul{
+        display: block;
+    }
 }
