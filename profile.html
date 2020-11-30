@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="bg__App">
+     <!--Navbar-->
+     <nav class="navbar">
+        <div class="navbar__container">
+            <div class="fadeInDown">
+                <a href="/" class="main__logo"><i class="fas fa-book-reader"></i>Agora Devs</a>
+            </div>
+            <!--Menu-->
+            <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="fadeInDown navbar__item">
+                    <a href="/" class="navbar__links">Developers</a>
+                </li>
+                <li class=" fadeInDown navbar__item">
+                    <a href="login.html" class="navbar__links">Login</a>
+                </li>
+                <li class="fadeInDown navbar__btn">
+                    <a href="register.html" class="navbar__btn--modifier">Sign Up</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    
+    <!--PROFILE-->
+    <section class="profile__main container">
+        <div class="grid-profile">
+        <!--HERO-->
+            <div class="profile__hero profiles__card bgCard bgCard--modifier">
+                <div>
+                    <img 
+                    src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                    alt="profile"/>
+                </div>
+                <div>
+                    <div class="profile__hero--intro">
+                        <h1>Jhon Dow</h1>
+                        <p>Seatle, WA</p>
+                    </div>
+                    <div class="profile__hero--social">
+                        <a href="#" target="blank" rel="noopener noreferrer">
+                            <i class="bx bx-globe fa-2x"></i>
+                        </a>
+                        <a href="#" target="blank" rel="noopener noreferrer">
+                            <i class="bx bxl-github fa-2x" ></i>
+                        </a>
+                        <a href="#" target="blank" rel="noopener noreferrer">
+                            <i class="bx bxl-linkedin-square fa-2x"></i>
+                        </a>
+                        <a href="#" target="blank" rel="noopener noreferrer">
+                            <i class="bx bxl-twitter fa-2x" ></i>
+                        </a>
+                        <a href="#" target="blank" rel="noopener noreferrer">
+                            <i class="bx bxl-facebook-square fa-2x"></i>
+                        </a>
+                        <a href="#" target="blank" rel="noopener noreferrer">
+                            <i class="bx bxl-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile__hero--more">
+                    <a href="#" target="blank" rel="noopener noreferrer">320 Conections</a>
+                    <a href="#" target="blank" rel="noopener noreferrer">More</a>
+                </div>
+            </div>
+        <!--ABOUT-->
+            <div class="profile__about bgCard bgCard--modifier">
+                <h2 class="text-primary">Jhons Bio</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                    doloremque nesciunt, repellendus nostrum deleniti recusandae nobis
+                    neque modi perspiciatis similique?
+                </p>
+                <div class="line"></div>
+                <h2 class="text-primary">Skill set</h2>
+                <div class="profile__about--skills">
+                    <div class="text-secondary">
+                        <i class="bx bx-check"></i> HTML
+                    </div>
+                    <div class="text-secondary">
+                        <i class="bx bx-check"></i> CSS
+                    </div>
+                    <div class="text-secondary">
+                        <i class="bx bx-check"></i> Javascript
+                    </div>
+                    <div class="text-secondary">
+                        <i class="bx bx-check"></i> Python
+                    </div>
+                    <div class="text-secondary">
+                        <i class="bx bx-check"></i> C#
+                    </div>
+                </div>
+            </div>
+        <!--EXPERIENCE-->
+            <div class="profile__experience bgCard bgCard--modifier">
+                <h2 class="text-primary">Experience</h2>
+                <div>
+                    <h3>Microsoft</h3>
+                    <p>Oct 2011 - Curretn</p>
+                    <p><strong>Position</strong>Senior Developer</p>
+                    <p>
+                        <strong>Description:</strong>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Dignissimos placeat, dolorum ullam
+                        ipsam, sapiente suscipit dicta eius velit amet aspernatur
+                        asperiores modi quidem expedita fugit.
+                    </p>
+                </div>
+                <div>
+                    <h3>Facebook</h3>
+                    <p>Nov 2004 - Oct 2011</p>
+                    <p><strong>Position</strong>Senior Developer</p>
+                    <p>
+                        <strong>Description:</strong>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Dignissimos placeat, dolorum ullam
+                        ipsam, sapiente suscipit dicta eius velit amet aspernatur
+                        asperiores modi quidem expedita fugit.
+                    </p>
+                </div>
+            </div>
+        <!--EDUCATION-->
+            <div class="profile__education bgCard bgCard--modifier">
+                <h2 class="text-primary">Education</h2>
+                <div>
+                    <h3>University Of Washington</h3>
+                    <p>Sep 1993 - June 1999</p>
+                    <p><strong>Degree:</strong>Master</p>
+                    <p><strong>Filed Of Study</strong>Computer Science</p>
+                    <p>
+                        <strong>Description:</strong>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Dignissimos placeat, dolorum ullam
+                        ipsam, sapiente suscipit dicta eius velit amet aspernatur
+                        asperiores modi quidem expedita fugit.
+                    </p>
+                </div>
+            </div>
+        <!--GITHUB-->
+            <div class="profile__github">
+                <h2 class="text-primary">
+                    <i class="bx bxl-github"></i>Github Repos
+                </h2>
+                <div class="bgCard bgCard--modifier repo">
+                    <div>
+                        <a class="text-primary" href="#" target="blank" rel="noopener noreferrer">
+                        <h4 > 
+                                Repo One
+                            </h4>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellat, laborum! 
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="badge badge-primary">Stars: 44</li>
+                            <li class="badge badge-dark">Watcher: 21</li>
+                            <li class="badge badge-light">Forks: 25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -63,6 +63,10 @@ li,a,button,input{
     cursor: pointer;
 }
 
+.bg__App{
+  background-color: #F3F2EF;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -72,6 +76,10 @@ li,a,button,input{
 }
 
 /*TEXTS*/
+
+.fa-2x{
+  font-size: 2rem;
+}
 
 .subtitle{
   font-size: 2.625rem;
