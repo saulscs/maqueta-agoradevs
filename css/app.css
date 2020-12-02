@@ -482,6 +482,11 @@
     
 }
 
+.form-group span{
+    display: flex;
+    align-items: center;
+}
+
 .form__box .social-input i{
     padding: 0.5rem;
     width: 4rem;
