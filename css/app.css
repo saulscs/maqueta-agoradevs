@@ -57,8 +57,17 @@
 .btn__post--container{
     border: none;
     border-radius: 6px;
-    padding: 0 0.5rem;
+    padding: 0.4rem 0.5rem;
+}
 
+.btn__dashboard{
+    margin: 0.5rem;
+    background: var(--white);
+    color: var(--mainPurple);
+}
+
+.btn__dashboard:hover{
+    background-color: #aaa;
 }
 
 /*TEXT UI*/
@@ -398,4 +407,49 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     margin-bottom: 1rem;
+}
+
+/*DASHBOARD UI*/
+
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.dashboard__buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hide-sm{
+    display: none;
+}
+
+.table{
+    margin: 0 auto;
+}
+
+.table th{
+    background: var(--white);
+    color: var(--mainPurple);
+    border-radius: 6px;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: center;
+}
+
+.dashboar__delete{
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .hide-sm{
+        display: revert;
+    }
+    
 }
