@@ -152,8 +152,16 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3.125rem;
-    width: 80%;
+    width: 100%;
 }
+
+@media screen and (min-width: 768px){
+    
+    .form__box{
+        width: 50%;
+    }
+}
+
 
 .form__box--input,
 .form__box--input textarea {
@@ -240,6 +248,7 @@
 
 .profile__main{
     padding: 10px 0;
+    width: 90%;
 }
 
 .profile__hero{
@@ -415,6 +424,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 }
 .dashboard__buttons{
     display: flex;
@@ -453,3 +463,48 @@
     }
     
 }
+
+/*CREATE PROFILE UI*/
+
+.form-group{
+    width: 100%;
+}
+
+.form__box .social-input{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px){
+    .form__box .social-input{
+        flex-wrap: nowrap;
+    }
+    
+}
+
+.form__box .social-input i{
+    padding: 0.5rem;
+    width: 4rem;
+}
+
+.form__box  .social-input i.fa-twitter{
+    color: #38a1f3;
+}
+
+.form__box .social-input i.fa-facebook{
+    color: #3b5998;
+}
+
+.form__box .social-input i.fa-youtube{
+    color: #c4302b;
+}
+
+.form__box .social-input i.fa-linkedin{
+    color: #0077b5;
+}
+
+.form__box .social-input i.fa-instagram{
+    color: #3f729b;
+}
+
+

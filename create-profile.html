@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create profile</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="bg__App">
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="fadeInDown">
+                <a href="/" class="main__logo"><i class="fas fa-book-reader"></i>Agora Devs</a>
+            </div>
+            <!--Menu-->
+            <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="fadeInDown navbar__item">
+                    <a href="/" class="navbar__links">Developers</a>
+                </li>
+                <li class=" fadeInDown navbar__item">
+                    <a href="login.html" class="navbar__links">Login</a>
+                </li>
+                <li class="fadeInDown navbar__btn">
+                    <a href="register.html" class="navbar__btn--modifier">Sign Up</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+         <!--Create profile-->
+        <section class="container container--modifier dashboard">
+            <h1 class="title__app text-primary fadeInDown">Create your profile </h1>
+            <p class="subtitle__app fadeInDown"><i class="bx bxs-user"></i>Let's get some information to make your
+                profile stand out</p>
+            <small>* = required field</small>
+            <form class="form__box">
+                <div class="form-group">
+                    <select name="status" class="form__box--input">
+                        <option value="0">* Select Professional Status</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Junior Developer">Junior Developer</option>
+                        <option value="Senior Developer">Senior Developer</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Student or Learning">Student or Learning</option>
+                        <option value="Instructor">Instructor or Teacher</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <small class="form-text">
+                        Give us an idea of where you are at in your career
+                    </small>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" placeholder="Company" name="company" class="form__box--input" />
+                    <small class="form-text">
+                        Could be your own company or one you work for
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Website" name="website" class="form__box--input"/>
+                    <small class="form-text">Could be your own or a company website</small>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" placeholder="Location" name="location" class="form__box--input"/>
+                    <small class="form-text">
+                        City & state suggested (eg. Boston, MA)
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="* Skills" name="skills" class="form__box--input" />
+                    <small class="form-text">
+                        Please use comma separated values (eg.
+                      HTML,CSS,JavaScript,PHP)
+                      </small>
+                </div>
+
+                <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Github Username"
+                      name="githubusername"
+                      class="form__box--input"
+                    />
+                    <small class="form-text">
+                        If you want your latest repos and a Github link, include your
+                      username
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="A short bio of yourself" name="bio" class="form__box--input"></textarea>
+                    <small class="form-text">Tell us a little about yourself</small>
+                </div>
+                
+                <div class=" alert__content">
+                    <span >
+                      Add Social Network Links
+                    </span>
+                </div>
+                
+                <div class="form-group social-input">
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <input type="text" placeholder="Twitter URL" name="twitter"  class="form__box--input"/>
+                </div>
+
+                <div class="form-group social-input">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <input type="text" placeholder="Facebook URL" name="facebook" class="form__box--input"/>
+                </div>
+
+                <div class="form-group social-input">
+                    <i class="fab fa-youtube fa-2x"></i>
+                    <input type="text" placeholder="YouTube URL" name="youtube" class="form__box--input"/>
+                </div>
+
+                <div class="form-group social-input">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <input type="text" placeholder="Linkedin URL" name="linkedin" class="form__box--input"/>
+                </div>
+
+                <div class="form-group social-input">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <input type="text" placeholder="Instagram URL" name="instagram" class="form__box--input"/>
+                </div>
+
+                <button type="submit" class="btn btn__primary">Save</button>
+            </form>
+        </section>  
+</body>
+</html>
