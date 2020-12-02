@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Education</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="bg__App">
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="fadeInDown">
+                <a href="/" class="main__logo"><i class="fas fa-book-reader"></i>Agora Devs</a>
+            </div>
+            <!--Menu-->
+            <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="fadeInDown navbar__item">
+                    <a href="/" class="navbar__links">Developers</a>
+                </li>
+                <li class=" fadeInDown navbar__item">
+                    <a href="login.html" class="navbar__links">Login</a>
+                </li>
+                <li class="fadeInDown navbar__btn">
+                    <a href="register.html" class="navbar__btn--modifier">Sign Up</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    <!--Navbar-->  
+    <section class="container container--modifier dashboard">
+        <h1 class="title__app text-primary fadeInDown">Add Your Education   </h1>
+        <p class="subtitle__app fadeInDown"><i class="fas fa-code-branch"></i> Add any developer/programming positions that you have had in the past 
+            profile stand out</p>
+        <small>* = required field</small>
+        
+        <form class="form__box form__box--modifier">
+            <div class="form-group">
+                <input type="text" placeholder="*School or Bootcamp" name="school" class="form__box--input" />
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="*Degree or Certificate" name="degree" class="form__box--input" />
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Field Study" name="study" class="form__box--input" />
+            </div>
+            <div class="form-group">
+                <h4>From Date</h4>
+                <input class="form__box--input" type="date" name="from" />
+            </div>
+
+            <div class="form-group">
+                <span>
+                <small>Current Job</small>
+                <input class="form__box--input" type="checkbox" name="current" value=""/>
+                 </span> 
+            </div>
+
+            <div class="form-group">
+                <h4>To Date</h4>
+                <input class="form__box--input" type="date" name="to" />
+            </div>
+
+            <div class="form-group">
+                <textarea placeholder="Program description" name="bio" class="form__box--input"></textarea>
+            </div>
+            <button type="submit" class="btn btn__primary">Save</button>
+        </form>
+    </section>
+</body>
+</html>
