@@ -75,7 +75,20 @@ li,a,button,input{
     width: 80%;
 }
 
+.container--modifier{
+  padding: 10px 0;
+}
+
+
 /*TEXTS*/
+
+.ml-1x{
+  margin-right: 1rem;
+}
+
+.mb-1x{
+  margin-bottom: 1rem;
+}
 
 .fa-2x{
   font-size: 2rem;
