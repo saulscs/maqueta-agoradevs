@@ -260,6 +260,10 @@
     padding: 1rem;
 }
 
+.views__add a{
+    color: var(--mainPurple);
+}
+
 .views__more button{
     color: var(--mainPurple);
     border: none;
@@ -432,6 +436,13 @@
 
 
 /*POSTS UI*/
+
+
+@media screen and (min-width: 960px){
+    .posts{
+        max-width: 70%;
+    }
+}
 
 .post__form{
     
